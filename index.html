@@ -65,7 +65,7 @@
         </div>
     </section>
     <div class="image-container">
-        <img src="./images/coffee_blast.png" alt="a cup of coffee blast" class="discover-image">
+        <div class="background-image-blast"></div>
     </div>
     <section class="menu">
         <h2 id="menu">Enjoy a new blend of coffee style</h2>
@@ -101,8 +101,8 @@
             </li>
         </ul>
     </section>
-    <div class="image-container raight">
-        <img src="./images/coffee_blast-raight.png" alt="a cup of coffee blast" class="discover-image">
+    <div class="image-container ">
+        <div class="background-image-blast background-image-blast-right"></div>
     </div>
     <section class="about">
         <h2 id="about">Why are we different?</h2>
@@ -172,8 +172,8 @@
             </div>
         </section>
     </div>
-    <div class="image-container raight">
-        <img src="./images/coffee_blast-raight.png" alt="a cup of coffee blast" class="discover-image">
+    <div class="image-container ">
+        <div class="background-image-blast background-image-blast-right"></div>
     </div>
     <section class="feedback">
         <h2>Our coffee perfection feedback</h2>
@@ -196,13 +196,13 @@
         </div>
     </section>
             <div class="image-container">
-                <img src="./images/coffee_blast.png" alt="a cup of coffee blast" class="blest-image">
+                <div class="background-image-blast background-image-blast-y"></div>
             </div>
     <div class="background-image-container">
         <section class="subscribe">
             <h2 class="subscribe-title">Subscribe to get the Latest News</h2>
             <p class="subscribe-description">Don’t miss out on our latest news, updates, tips and special offers</p>
-            <form class="subscribe-form">
+            <form class="subscribe-form" autocomplete="off" novalidate>
                 <input type="email" placeholder="Enter your email" required class="email-input" />
                 <button type="submit" class="button-subscribe">Subscribe</button>
             </form>
@@ -210,7 +210,7 @@
     </div>
     </main>
     <div class="image-container">
-        <img src="./images/cup_of_fire.png" alt="a cup of coffee blast" class="discover-image">
+        <div class="background-image-cup"></div>
     </div>
     <footer class="footer">
         <div class="footer-about">
@@ -283,6 +283,33 @@
             </address>
         </div>
     </footer>
+    <div class="modal-window-container">
+        <form>
+            <p>Create Account</p>
+            <p>Sign up to get started</p>
+            <label>
+                Full Name
+                <input type="text" name="user-name" maxlength="18" minlength="3"/>
+            </label>
+            <label>
+                Email Address
+                <input type="email" name="email"/> 
+            </label>
+            <label>
+                Password
+                <input type="password" name="password" maxlength="12" minlength="8"/>
+            </label>
+            <label>
+                Confirm Password
+                <input type="password" name="password" maxlength="12" minlength="8" />
+            </label>
+            <label>
+                <input type="checkbox" value="yes"/>
+                I agree to the Terms of Service and <a href="/the_page_does_not_exist">Privacy Policy &#169;</a>
+            </label>
+            <button type="submit">Create Account</button>
+        </form>
+    </div>
 </body>
 
 </html>

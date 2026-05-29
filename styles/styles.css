@@ -31,6 +31,13 @@ img {
     display: block;
     max-width: 100%;
 }
+input {
+    outline: none;
+    box-shadow: none;
+}
+input::placeholder{
+    color: rgba(0, 0, 0, 0.34);
+}
 .heder-menu {
     display: flex;
     gap: 20px;
@@ -70,20 +77,20 @@ button {
     position: relative;
     bottom: 160px;
 }
-.discover-image {
-    position: absolute;
 
-}
 .raight {
     display: flex;
     justify-content: flex-end;
     bottom: 50px;
 }
+
+
 /* header */
 
 .logo {
     font-family: Playball, cursive;
     font-size: 35px;
+    z-index: 2;
 }
 
 .button-sign-in {
@@ -135,7 +142,37 @@ button {
     display: flex;
     justify-content: center;
 }
+/* background images */
+.background-image-blast,
+.background-image-cup {
+    background-image: url('../images/coffee_blast.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    z-index: 1;
+}
+
+.background-image-cup {
+    background-image: url('../images/cup_of_fire.png');
+
+}
+
+.background-image-blast-right {
+    left: auto;
+    right: 0;
+    transform: scaleX(-1);
+}
+
+.background-image-blast-y {
+    transform: scaleY(-1);
+    top: -80px;
+}
 /* menu section */
+
 .menu {
     position: relative;
     padding: 95px;
@@ -269,10 +306,7 @@ button {
     left: 46%;
     bottom: -58px;
 }
-.blest-image {
-    position: absolute;
-    transform: scaleY(-1);
-}
+
 .feedback-description {
     font-weight: 600;
     font-size: 18px;
@@ -301,7 +335,7 @@ button {
 .email-input {
     padding: 14px 26px;
     font-size: 16px;
-    color: rgba(0, 0, 0, 0.34);
+    color: #1e1e1e;
     background-color: #FFF9F1;
     border: none;
 }
