@@ -195,9 +195,9 @@
             <img src="./images/person.png" alt="person" width="112" class="bottom-img" />
         </div>
     </section>
-            <div class="image-container">
-                <div class="background-image-blast background-image-blast-y"></div>
-            </div>
+    <div class="image-container">
+        <div class="background-image-blast background-image-blast-y"></div>
+    </div>
     <div class="background-image-container">
         <section class="subscribe">
             <h2 class="subscribe-title">Subscribe to get the Latest News</h2>
@@ -224,27 +224,27 @@
             </p>
             <ul class="social-media">
                 <li class="social-media-item">
-                    <a href="https://www.facebook.com/" >
+                    <a href="https://www.facebook.com/">
                         <svg width="24" height="24">
-                            <use href="./images/sprite.svg#facebook" ></use>
+                            <use href="./images/sprite.svg#facebook"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-media-item">
                     <a href="https://www.instagram.com/">
                         <svg width="24" height="24">
-                            <use href="./images/sprite.svg#instagram" ></use>
+                            <use href="./images/sprite.svg#instagram"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="social-media-item">
                     <a href="https://www.youtube.com/">
                         <svg width="24" height="24">
-                            <use href="./images/sprite.svg#youtube" ></use>
+                            <use href="./images/sprite.svg#youtube"></use>
                         </svg>
                     </a>
                 </li>
-            </ul>    
+            </ul>
         </div>
         <div>
             <h3 class="footer-heading">About</h3>
@@ -284,28 +284,33 @@
         </div>
     </footer>
     <div class="modal-window-container">
-        <form>
-            <p>Create Account</p>
-            <p>Sign up to get started</p>
-            <label>
+        <form class="form-registred">
+            <p class="form-title">Create Account</p>
+            <p class="form-description">Sign up to get started</p>
+            <label class="form-label">
                 Full Name
-                <input type="text" name="user-name" maxlength="18" minlength="3"/>
+                <input class="form-input" type="text" name="user-name" maxlength="18" minlength="3"
+                    placeholder="John Doe" />
             </label>
-            <label>
+            <label class="form-label">
                 Email Address
-                <input type="email" name="email"/> 
+                <input class="form-input" type="email" name="email" placeholder="Ryq9M@example.com" />
             </label>
-            <label>
+            <label class="form-label">
                 Password
-                <input type="password" name="password" maxlength="12" minlength="8"/>
+                <input class="form-input" type="password" name="password" maxlength="12" minlength="8" />
             </label>
-            <label>
+            <label class="form-label">
                 Confirm Password
-                <input type="password" name="password" maxlength="12" minlength="8" />
+                <input class="form-input" type="password" name="password" maxlength="12" minlength="8" />
             </label>
-            <label>
-                <input type="checkbox" value="yes"/>
-                I agree to the Terms of Service and <a href="/the_page_does_not_exist">Privacy Policy &#169;</a>
+            <label class="form-checkbox">
+                <input type="checkbox" class="checkbox-input">
+                <span class="checkbox-custom"></span>
+                I agree to the Terms of Service and
+                <a href="/the_page_does_not_exist" class="modal-privacy">
+                    Privacy Policy
+                </a>
             </label>
             <button type="submit">Create Account</button>
         </form>
