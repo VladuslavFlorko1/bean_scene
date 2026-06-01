@@ -285,6 +285,7 @@
     </footer>
     <div class="modal-window-container">
         <form class="form-registred">
+            <button type="button" class="close-button">&times;</button>
             <p class="form-title">Create Account</p>
             <p class="form-description">Sign up to get started</p>
             <label class="form-label">
@@ -315,6 +316,22 @@
             <button type="submit">Create Account</button>
         </form>
     </div>
+    <div class="modal-window-container-sign-in">
+        <form class="form-registred">
+            <button type="button" class="close-button-sign-in">&times;</button>
+            <p class="form-title">Welcome Back</p>
+            <p class="form-description">Sign in to continue</p>
+            <label class="form-label">
+                Email Address
+                <input class="form-input" type="email" name="email" placeholder="Ryq9M@example.com" />
+            </label>
+            <label class="form-label">
+                Password
+                <input class="form-input" type="password" name="password" maxlength="12" minlength="8" />
+            </label>
+            <button type="submit">Sign In</button>            
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
 </body>
-
 </html>

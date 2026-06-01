@@ -396,8 +396,18 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease;
+}
+
+.is-active {
+    opacity: 1;
+    pointer-events: auto;
 }
 .form-registred{
+    position: relative;
     background-color: azure;
     padding: 40px;
     max-width: 60%;
@@ -480,4 +490,36 @@ button {
 .modal-privacy {
     color: #603809;
     text-decoration: underline;
+}
+.close-button, .close-button-sign-in {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #1e1e1e;
+    cursor: pointer;
+}
+/* modal-window-sing-in */
+
+.modal-window-container-sign-in{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.34);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease;
+}
+.is-active-sign-in {
+    opacity: 1;
+    pointer-events: auto;
 }
