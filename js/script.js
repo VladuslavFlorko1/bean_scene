@@ -20,3 +20,14 @@ closeBtn.addEventListener('click', () => {
 closeBtnSignIn.addEventListener('click', () => {
     modalWindowSignIn.classList.remove('is-active-sign-in');
 });
+modalWindow.addEventListener('click', (event) => {
+    if (event.target === modalWindow) {
+        modalWindow.classList.remove('is-active');
+    }
+});
+
+modalWindowSignIn.addEventListener('click', (event) => {
+    if (event.target === modalWindowSignIn) {
+        modalWindowSignIn.classList.remove('is-active-sign-in');
+    }
+});
