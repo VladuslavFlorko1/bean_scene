@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: "Playfair Display", serif;
     font-size: 20px;
@@ -21,6 +24,10 @@ a {
     text-decoration: none;
     color: white;
     font-size: 14px;
+}
+a:hover {
+    color: #F9C06A;
+
 }
 ul {
     list-style-type: none;
@@ -49,6 +56,24 @@ input::placeholder{
     display: flex;
     gap: 20px;
 }
+.nav-link a {
+    position: relative;
+}
+
+.nav-link a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #F9C06A;
+    transition: width 250ms ease;
+}
+
+.nav-link a:hover::after {
+    width: 100%;
+}
 .auth-link {
     display: flex;
     gap: 10px;
@@ -73,6 +98,11 @@ button {
     border-radius: 24px;
     cursor: pointer;
 }
+button:hover {
+    background-color: rgba(249, 192, 106, 0);
+    box-shadow: 0 8px 20px rgba(249, 192, 106, 0.4);
+    color: #F9C06A;
+}
 .image-container {
     position: relative;
     bottom: 160px;
@@ -92,12 +122,19 @@ button {
     font-size: 35px;
     z-index: 2;
 }
+.logo:hover {
+    color: white;
+}
 
 .button-sign-in {
     background-color: transparent;
     border: 1px solid #f9c06a;;
     border-radius: 24px;
     color: white;
+}
+.button-sign-in:hover {
+    background-color: #f9c06a;
+    color: #1e1e1e;
 }
 .button-sign-up {
     background-color: #f9c06a;
